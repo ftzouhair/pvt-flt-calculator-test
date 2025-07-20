@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Luxury Jet Quote – 2025</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="card">
+  <h2>Your Private-Charter Estimate</h2>
+
+  <!-- FROM -->
+  <div class="pos">
+    <label>Departure Airport</label>
+    <input id="from" placeholder="Type city or airport…">
+    <div id="from-suggestions" class="suggestions"></div>
+  </div>
+
+  <!-- TO -->
+  <div class="pos">
+    <label>Arrival Airport</label>
+    <input id="to" placeholder="Type city or airport…">
+    <div id="to-suggestions" class="suggestions"></div>
+  </div>
+
+  <label>Preferred Aircraft</label>
+  <select id="aircraft">
+    <option value="Turboprop">Turboprop – up to 8 pax</option>
+    <option value="VLJ">Very Light Jet – up to 4 pax</option>
+    <option value="Light">Light Jet – up to 8 pax</option>
+    <option value="Midsize">Midsize Jet – up to 9 pax</option>
+    <option value="SuperMidsize">Super-Midsize – up to 12 pax</option>
+    <option value="Large">Large Jet – up to 16 pax</option>
+    <option value="Ultra">Ultra-Long-Range – up to 19 pax</option>
+    <option value="VIP">Executive Airliner – 20+ pax</option>
+  </select>
+
+  <label>Flight Date</label><input type="date" id="date" required>
+  <label>Passengers</label><input type="number" id="pax" min="1" max="100" value="4">
+  <button id="getQuoteBtn">Request Tailored Estimate</button>
+  <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
